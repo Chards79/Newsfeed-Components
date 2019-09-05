@@ -33,7 +33,7 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
-const header = document.querySelector("header");
+const header = document.querySelector(".header");
 const menuButton = document.querySelector(".menu-button");
 
 function createMenu(menuItems) {
@@ -59,4 +59,4 @@ function createMenu(menuItems) {
 	return menu;
 }
 
-menuButton.appendChild(createMenu(menuItems));
+header.appendChild(createMenu(menuItems));
